@@ -58,23 +58,6 @@ public class Test extends JFrame /*implements ActionListener*/{
         return panel;
     }
 
-    public class Login extends JButton implements ActionListener {
-        private static final long serialVersionUID = 1L;
-        public Login() {
-            super();
-            this.addActionListener(this);
-        }
-		public void actionPerformed(ActionEvent evt) {
-            String pass = new String(password.getPassword());
-            if(pass.equals("0000")){
-                ((CardLayout)(mainPanel.getLayout())).show(mainPanel, PANEL_B);
-            } else {
-                JLabel error = new JLabel("パスワードが違います");
-                JOptionPane.showMessageDialog(this, error, "失敗", JOptionPane.ERROR_MESSAGE);     
-            }
-		}
-    }
-
     private JPanel createPanelB() {
         JPanel panel=new JPanel();
         JLabel title = new JLabel("画面B");
