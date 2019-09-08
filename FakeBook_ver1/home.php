@@ -11,9 +11,6 @@ session_start();
 <title>home</title>
 </head>
 <body>   
-<!--ヘッダー-->
-<header>
-
     <nav id="always_navi">
         <ul>
             <form method="post" action="search.php">
@@ -26,15 +23,15 @@ session_start();
 
 <article id="top_cotent">
         <form method="post" action="post.php">
-            <input type="text" name="search" id="search">
+            <textarea name="post" id="post" rows="10" cols="50"></textarea>
             <div class="submit_button">
                 <input type="submit" name="submitButton" id="submitButton" value="投稿">
             </div>
         </form>
     <div id="system">
-        <h2>当社のシステム</h2>
+        <h2>test</h2>
         <ul>
-            <ol><?php echo $val1['']; ?></ol>
+            <ol><?php echo "test"; ?></ol>
             <ol><?php echo $val2['']; ?></ol>
             <ol><?php echo $val3['']; ?></ol>
             <ol><?php echo $val4['']; ?></ol>
