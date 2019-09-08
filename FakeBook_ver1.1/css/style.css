@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body {
+    margin-right: auto;
+    margin-left : auto;
+    width: 980px;
+}
+a:hover {
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {margin-top: 0;}
+p {
+    margin-top: 0;
+    line-height: 1;
+}
+#always_navi {
+    float: right;
+    margin: 0, 0, 0;
+    padding: 4px;
+    position: fixed;
+    right: 20px;
+}
+#always_navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#always_navi ul li a {
+    color: aliceblue;
+    font-size: 20;
+    text-decoration: none ;
+}
+
+
+/* ページトップ */
+#scrollTop {
+    background-color: #eee;
+    bottom: 20px;
+    padding: 4px;
+    position: fixed;
+    right: 20px;
+}
+
+/* メイン */
+
+#top_cotent {
+    width: 980px;
+    margin: 0;
+    overflow: hidden;
+}
+#top_cotent #chatch{
+    background-color:yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+#top_cotent h2 {
+    font-size: 22px;
+    border: 1px solid;
+    padding: 11px 22px;
+    border-radius: 5px; 
+}
+#system ul {
+    margin: 0;
+    padding: 0;
+}
+#system ul ol {
+    font-size: 18px;
+    border: 1px solid;
+    padding: 8px 18px;
+    border-radius: 5px; 
+    margin: 0 10px 20px 0;
+}
