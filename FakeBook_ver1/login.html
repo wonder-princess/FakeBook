@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<title>home</title>
+</head>
+<body>
+    <!--ヘッダー-->
+<header>
+    <nav id="always_navi">
+        <ul>
+            <form method="post" action="search.php">
+                <li class="search">検索<input type="text" name="search" id="search"></li>
+            </form>
+            <li class="myPage"><a href="myPage.php">マイページ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<form method="post" action="login.php">
+    <div class="mail">
+        <input type="text" name="mail" id="mail">登録メールアドレス
+    </div>
+    <div class="pass">
+        <input type="texy" name="pass" id="pass">登録パスワード
+    </div>
+    <div class="submit_button">
+        <input type="submit" name="submitButton" id="submitButton" value="ログイン">
+    </div>
+</form>
+</body>
+</html>
