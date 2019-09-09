@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$postlist = $_SESSION['post'];
+$postlist = $_SESSION;
 ?>
 
 <!DOCTYPE html>
@@ -31,16 +31,16 @@ $postlist = $_SESSION['post'];
     <div id="system">
         <h2>test</h2>
         <ul>
-            <ol><?php echo $postlist[0]; ?></ol>
-            <ol><?php echo $postlist[1]; ?></ol>
-            <ol><?php echo $postlist[2]; ?></ol>
-            <ol><?php echo $postlist[3]; ?></ol>
-            <ol><?php echo $postlist[4]; ?></ol>
-            <ol><?php echo $postlist[5]; ?></ol>
-            <ol><?php echo $postlist[6]; ?></ol>
-            <ol><?php echo $postlist[7]; ?></ol>
-            <ol><?php echo $postlist[8]; ?></ol>
-            <ol><?php echo $postlist[9]; ?></ol>
+            <ol><?php echo $postlist[0]['post']; ?></ol>
+            <ol><?php echo $postlist[1]['post']; ?></ol>
+            <ol><?php echo $postlist[2]['post']; ?></ol>
+            <ol><?php echo $postlist[3]['post']; ?></ol>
+            <ol><?php echo $postlist[4]['post']; ?></ol>
+            <ol><?php echo $postlist[5]['post']; ?></ol>
+            <ol><?php echo $postlist[6]['post']; ?></ol>
+            <ol><?php echo $postlist[7]['post']; ?></ol>
+            <ol><?php echo $postlist[8]['post']; ?></ol>
+            <ol><?php echo $postlist[9]['post']; ?></ol>
         </ul>
     </div>
 </article>
