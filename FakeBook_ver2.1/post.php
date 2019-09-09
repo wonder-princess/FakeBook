@@ -13,7 +13,7 @@ try {
     $sql = "SELECT post FROM testuserpost ORDER BY No DESC FETCH FIRST 10 ROWS ONLY";
     $stmt = $dbh->prepare($sql);
     $stmt->execute();
-    $postlist[] = $stmt->fetch(PDO::FETCH_ASSOC);
+    $postlist[] = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $_SESSION = $postlist;
     $dbh = null;
 
